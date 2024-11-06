@@ -1,14 +1,14 @@
 import React, {useContext} from "react";
 import "./Achievement.scss";
-import AchievementCard from "../../components/achievementCard/AchievementCard";
-import {achievementSection} from "../../portfolio";
+// import AchievementCard from "../../components/achievementCard/AchievementCard";
+// import {achievementSection} from "../../portfolio";
 import {Fade} from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
 export default function Achievement() {
   const {isDark} = useContext(StyleContext);
-  if (!achievementSection.display) {
-    return null;
-  }
+  // if (!achievementSection.display) {
+  //   return null;
+  // }
   return (
     <Fade bottom duration={1000} distance="20px">
       <div className="main" id="achievements">
@@ -21,7 +21,7 @@ export default function Achievement() {
                   : "heading achievement-heading"
               }
             >
-              {achievementSection.title}
+              {/* {achievementSection.title} */}
             </h1>
             <p
               className={
@@ -30,11 +30,11 @@ export default function Achievement() {
                   : "subTitle achievement-subtitle"
               }
             >
-              {achievementSection.subtitle}
+              {/* {achievementSection.subtitle} */}
             </p>
           </div>
           <div className="achievement-cards-div">
-            {achievementSection.achievementsCards.map((card, i) => {
+            {/* {achievementSection.achievementsCards.map((card, i) => {
               return (
                 <AchievementCard
                   key={i}
@@ -48,7 +48,7 @@ export default function Achievement() {
                   }}
                 />
               );
-            })}
+            })} */}
           </div>
         </div>
       </div>
